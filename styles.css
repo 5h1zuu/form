@@ -1,8 +1,28 @@
-body{
+@font-face {
+    font-family: coolFont;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+body, input, button{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: coolFont;
+    
 }
+
+input{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+}
+
 
 .formContainer{
     display: flex;
@@ -22,7 +42,6 @@ body{
 
 .rightSide{
     width: 100%;
-    padding: 50px;
     background-color: rgb(235, 238, 240);
     
 }
@@ -30,4 +49,21 @@ body{
 .capt{
     margin-top: 100px;
     width: 875px;
+    padding: 50px;
 }
+
+
+.sign-form{
+    display: flex;  
+    background-color: white;
+    
+}
+
+
+.form-row{
+    display: flex;
+    align-items: center;
+    gap:75px;
+    margin: 30px;
+}
+
