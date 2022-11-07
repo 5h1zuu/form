@@ -73,8 +73,9 @@ button{
 
 .sign-form{
     display: flex;  
-    background: #fff;
+    flex-direction: column;
     box-sizing: border-box;
+
 }
 
 
@@ -83,7 +84,6 @@ button{
     align-items: center;
     gap:75px;
     margin: 40px;
-
 }
 
 fieldset{
@@ -99,6 +99,12 @@ legend{
     font-weight: bold;
     
 }
+
+.form{
+    background-color: white;
+}
+
+
 
 .log{
     font-size: 20px;
