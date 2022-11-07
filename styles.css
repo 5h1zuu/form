@@ -140,3 +140,40 @@ a:link {
     color: rgb(59, 139, 59);
     text-decoration: none;
   }
+
+
+input:not(:focus):invalid {
+    border: 1px solid rgba(255, 0, 0, 0.959);
+}
+
+input:focus:invalid{
+    border: 1px solid rgb(250, 0, 0);
+}
+
+input:focus:valid{
+    border: 1px solid rgb(21, 250, 0);
+}
+
+input:not(:focus):valid{
+    border: 1px solid rgb(21, 250, 0);
+}
+
+input + span {
+    position: relative;
+  }
+  
+  input + span::before {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+  }
+
+input:invalid + span::before {
+    content: "✖";
+    color: red;
+  }
+  
+  input:valid + span::before {
+    content: "✓";
+    color: green;
+  }
