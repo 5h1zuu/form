@@ -6,15 +6,14 @@
 body, input, button{
     margin:0;
     padding:0;
-    box-sizing: border-box;
-    font-family: coolFont;
-    
+    box-sizing: border-box;    
 }
 
 input{
     width: 300px;
     height: 35px;
     border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 button{
@@ -25,20 +24,38 @@ button{
 
 
 .formContainer{
-    display: flex;
+    display: flex; 
 }
 
 
 .imageLeft{
+    position: relative;
     width:100vh;
     height: 100vh;
     background-image: url(images/leaf.jpg);
     background-size: 70vh;
     background-repeat: no-repeat;
-    
+
 }
 
+.ontop{
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 185px;
+    margin-top: 175px;
+    font-family: coolFont;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
 
+.odin{
+    width: 150px;
+    height: 175px;
+}
 
 .rightSide{
     width: 100%;
@@ -47,16 +64,17 @@ button{
 }
 
 .capt{
-    margin-top: 100px;
+    margin-top: 50px;
     width: 875px;
     padding: 50px;
+
 }
 
 
 .sign-form{
     display: flex;  
-    background-color: white;
-    
+    background: #fff;
+    box-sizing: border-box;
 }
 
 
@@ -64,6 +82,24 @@ button{
     display: flex;
     align-items: center;
     gap:75px;
-    margin: 30px;
+    margin: 40px;
+
 }
 
+fieldset{
+    position: relative;
+    border: none;
+}
+
+legend{
+    position: absolute;
+    top:8px;
+    left: 45px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.log{
+    font-size: 20px;
+}
