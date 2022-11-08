@@ -35,13 +35,13 @@
                     <div class="form-row">
                         <div class="row-group">
                         <label for="first_name"><div>First Name:</div></label>
-                            <input type="text" id="first_name" name="first_name" required>
+                            <input type="text" id="first_name" name="first_name" required placeholder="John">
                             <span></span>
                         </div>
 
                         <div class="row-group">
                         <label for="second_name"><div>Second Name:</div></label>
-                            <input type="text" id="second_name" name="second_name"required>
+                            <input type="text" id="second_name" name="second_name"required placeholder="Smith">
                             <span></span>
                         </div>
                     </div>
@@ -49,13 +49,13 @@
                     <div class="form-row">
                         <div class="row-group">
                         <label for="email"><div>Email:</div></label>
-                            <input type="email" id="email" name="email"required>
+                            <input type="email" id="email" name="email"required placeholder="awasaw@awdaa.com">
                             <span></span>
                         </div>
                     
                         <div class="row-group">
                         <label for="phone"><div>Phone Number:</div></label>
-                            <input type="tel" id="phone" name="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"required>
+                            <input type="tel" id="phone" name="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"required placeholder="12345678902">
                             <span></span>
                         </div>
                     </div>
@@ -63,13 +63,13 @@
                     <div class="form-row">
                         <div class="row-group">
                         <label for="password"><div>Password:</div></label>
-                            <input type="password" id="password" name="password" class="error" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                            <input type="password" id="password" name="password" class="error" value="" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
                             <span></span>
                         </div>
 
-                        <div class="row-group">
-                        <label for="confirm_password"><div>Password:</div></label>
-                            <input type="password" id="confirm_password" class="error" name="confirm_password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                    <div class="row-group">
+                        <label for="confirm_password"><div>Confirm password:</div></label>
+                            <input type="password" id="confirm_password" class="error" value="" name="confirm_password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
                             <span></span>
                         </div>          
                     </div>
@@ -78,52 +78,13 @@
                     <div class="form-row">
                         <div class="row-group">
                             <button type="submit">Create Account</button>
-                            <h6 class="log">Already have an account?<a href="#">Log in</a></h6>
+                            <h6 class="log">Already have an account? <a href="#">Log in</a></h6>
                         </div>
                     </div>
-    
                 </fieldset>
-
-
             </form>
-
-
-            
-
-      
-
-
-
-
-
-
-
-
-
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script scr="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
